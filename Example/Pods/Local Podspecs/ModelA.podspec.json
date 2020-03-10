@@ -1,0 +1,22 @@
+{
+  "name": "ModelA",
+  "version": "0.1.0",
+  "summary": "A short description of ModelA.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/JL521/ModelA",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "JL521": "314886745@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/JL521/ModelA.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ModelA/Classes/**/*"
+}
