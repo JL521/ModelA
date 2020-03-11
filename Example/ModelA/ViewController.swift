@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ModelA
 
 class ViewController: UIViewController {
 
@@ -18,6 +19,14 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let stob = UIStoryboard.init(name: "Jobwanted", bundle: BundleTool.getBundle())
+
+        let vc = stob.instantiateViewController(withIdentifier: "JobWantListControllerViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }

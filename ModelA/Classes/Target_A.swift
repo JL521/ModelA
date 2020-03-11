@@ -19,6 +19,16 @@ import UIKit
         return aViewController
     }
     
+    @objc func Action_UserJob_ViewController(_ params:NSDictionary) -> UIViewController {
+        if let callback = params["callback"] as? (String) -> Void {
+            callback("success")
+        }
+
+        let stob = UIStoryboard.init(name: "Jobwanted", bundle: BundleTool.getBundle())
+        let vc = stob.instantiateViewController(withIdentifier: "JobWantListControllerViewController")
+        return vc
+    }
+    
     @objc func Action_Category_ViewController(_ params:NSDictionary) -> UIViewController {
         
         if let block = params["callback"] {

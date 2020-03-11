@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ModelA'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'ModelA组件'
   s.swift_version    = '5'
 
@@ -29,15 +29,27 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/JL521/ModelA.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ModelA/Classes/**/*'
   
+  
+  
   # s.resource_bundles = {
-  #   'ModelA' => ['ModelA/Assets/*.png']
+  #   'ModelA' => ['ModelA/**/*']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'MJRefresh'
+  s.dependency 'Moya-ObjectMapper/RxSwift'
+  s.dependency 'SDCycleScrollView'
+  s.dependency 'IQKeyboardManagerSwift'
+  s.dependency 'MJRefresh'
+  s.dependency 'SwiftEntryKit','~> 1.1.3'
+  s.dependency 'SDWebImage'
+  s.dependency 'SwiftyJSON','~> 4.0'
+  s.dependency 'NVActivityIndicatorView'
+  
 end
