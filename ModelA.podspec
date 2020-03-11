@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ModelA'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'ModelA组件'
   s.swift_version    = '5'
 
@@ -42,14 +42,12 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   
-  s.dependency 'MJRefresh'
-  s.dependency 'Moya-ObjectMapper/RxSwift'
-  s.dependency 'SDCycleScrollView'
-  s.dependency 'IQKeyboardManagerSwift'
-  s.dependency 'MJRefresh'
+  s.dependency 'MJRefresh','~> 3.3.1'
+  s.dependency 'Moya-ObjectMapper/RxSwift','~> 2.8'
+  s.dependency 'IQKeyboardManagerSwift','~> 6.5.5'
+  s.dependency 'NVActivityIndicatorView','~> 4.8.0'
   s.dependency 'SwiftEntryKit','~> 1.1.3'
-  s.dependency 'SDWebImage'
   s.dependency 'SwiftyJSON','~> 4.0'
-  s.dependency 'NVActivityIndicatorView'
+  s.dependency 'SDWebImage','~> 5.6.0'
   
 end

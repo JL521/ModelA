@@ -1,9 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-
+use_frameworks!
 
 target 'ModelA_Example' do
-  use_frameworks!
+  
   pod 'ModelA', :path => '../'
 
   target 'ModelA_Tests' do
