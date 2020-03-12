@@ -30,7 +30,7 @@ class BusiFindPeopleViewController: JobWantBaseViewController {
         title = "我要求才"
 
         page = 1
-        let areav = Bundle.main.loadNibNamed("BusiFindPeopleHeadView", owner: self, options: nil)?.first as! BusiFindPeopleHeadView
+        let areav = BundleTool.getBundle().loadNibNamed("BusiFindPeopleHeadView", owner: self, options: nil)?.first as! BusiFindPeopleHeadView
         areav.frame = CGRect(x: 16, y: 10, width: self.view.frame.size.width-32, height: 94)
         self.view.addSubview(areav)
         seletAreaView = areav

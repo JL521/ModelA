@@ -25,7 +25,7 @@ class BusiJobManagerViewController: JobWantBaseViewController {
         setTabviewUI()
         view.addSubview(setFooterView())
     
-        bgview = Bundle.main.loadNibNamed("BusiNoJobView", owner: self, options: nil)?.first as? BusiNoJobView
+        bgview = BundleTool.getBundle().loadNibNamed("BusiNoJobView", owner: self, options: nil)?.first as? BusiNoJobView
         bgview?.frame = view.bounds
         bgview?.block = {
             [weak self] in

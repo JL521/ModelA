@@ -171,7 +171,7 @@ enum XibName:String {
 
 //加载xib view
 func loadXibView<T:UIView>(name:XibName,owner:Any? ) -> T?{
-    if let view = Bundle.main.loadNibNamed(name.rawValue, owner: owner, options:nil)?.last as? T{
+    if let view = BundleTool.getBundle().loadNibNamed(name.rawValue, owner: owner, options:nil)?.last as? T{
         return view;
     }
     return nil

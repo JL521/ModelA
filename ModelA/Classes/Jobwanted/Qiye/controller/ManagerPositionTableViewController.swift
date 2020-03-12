@@ -48,12 +48,20 @@ class ManagerPositionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.section == 0 {
+            let vc = BusiJobManagerViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 //            Router.jumpBusiJobManagerController(nav: navigationController)
         }else if indexPath.section == 1 {
+            let vc = ReciviedResumeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 //            Router.jumpBusiReciviedResumeController(nav: navigationController)
         }else if indexPath.section == 2 {
+            let vc = BusiInvitedPeopleViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 //            Router.jumpBusiInvitedPeopleController(nav: navigationController)
         }else if indexPath.section == 3 {
+            let vc = BusiFindPeopleViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 //            Router.jumpBusinissGetPeopleController(nav: navigationController)
         }
     }

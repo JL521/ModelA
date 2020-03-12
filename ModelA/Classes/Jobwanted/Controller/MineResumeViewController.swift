@@ -40,7 +40,7 @@ public class MineResumeViewController: JobWantBaseViewController {
             titles = ["求职意向","工作经验","项目经验","教育经历","附加简历"]
             self.title = "简历预览"
         }
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "yulanres"), style: .plain, target: self, action: #selector(loockResume))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: BundleTool.getImage(str: "yulanres"), style: .plain, target: self, action: #selector(loockResume))
 
         setTableview()
         

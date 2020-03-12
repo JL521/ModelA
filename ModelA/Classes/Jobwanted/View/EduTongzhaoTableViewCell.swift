@@ -31,23 +31,23 @@ class EduTongzhaoTableViewCell: UITableViewCell {
     func setData(str:String?) {
         clear()
         if str=="0" {
-            nobtn.setImage(UIImage(named: "empowe_check"), for: .normal)
+            nobtn.setImage(BundleTool.getImage(str: "empowe_check"), for: .normal)
         }else{
-            yesbtn.setImage(UIImage(named: "empowe_check"), for: .normal)
+            yesbtn.setImage(BundleTool.getImage(str: "empowe_check"), for: .normal)
         }
     }
     
     func clear() {
-        yesbtn.setImage(UIImage(named: "empowe_uncheck"), for: .normal)
-        nobtn.setImage(UIImage(named: "empowe_uncheck"), for: .normal)
+        yesbtn.setImage(BundleTool.getImage(str: "empowe_uncheck"), for: .normal)
+        nobtn.setImage(BundleTool.getImage(str: "empowe_uncheck"), for: .normal)
     }
     
     @IBAction func istz(_ sender: UIButton) {
         clear()
         if sender.tag==0 {
-            nobtn.setImage(UIImage(named: "empowe_check"), for: .normal)
+            nobtn.setImage(BundleTool.getImage(str: "empowe_check"), for: .normal)
         }else{
-            yesbtn.setImage(UIImage(named: "empowe_check"), for: .normal)
+            yesbtn.setImage(BundleTool.getImage(str: "empowe_check"), for: .normal)
         }
         if let block = tzblock {
             block("\(sender.tag)")

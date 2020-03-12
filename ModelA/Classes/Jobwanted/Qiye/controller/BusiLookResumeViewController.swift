@@ -201,7 +201,7 @@ extension BusiLookResumeViewController:UITableViewDelegate,UITableViewDataSource
    
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let hv = Bundle.main.loadNibNamed("MineResumeHeadView", owner: self, options: nil)?.first as! MineResumeHeadView
+        let hv = BundleTool.getBundle().loadNibNamed("MineResumeHeadView", owner: self, options: nil)?.first as! MineResumeHeadView
         hv.frame = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50)
         let str = titles![section]
         hv.titlel.text = str

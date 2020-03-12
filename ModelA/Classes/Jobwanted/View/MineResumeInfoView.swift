@@ -25,7 +25,7 @@ class MineResumeInfoView: UIView {
             sjl.text = "评估身价："+(model.sjScore ?? "")+"万"
             
             let url = URL.init(string: model.headPhotoPath?.https() ?? "")
-            headimgv?.sd_setImage(with: url, placeholderImage: UIImage(named: "wd_tx"), options: .retryFailed, completed: nil)
+            headimgv?.sd_setImage(with: url, placeholderImage: BundleTool.getImage(str: "wd_tx"), options: .retryFailed, completed: nil)
             
             sexl.text = model.gender
             agel.text = (model.age ?? "0")+"岁"

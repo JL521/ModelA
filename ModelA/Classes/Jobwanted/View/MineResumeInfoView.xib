@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="pfF-Mn-k9H" customClass="MineResumeInfoView" customModule="Rencaiyoujia" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="pfF-Mn-k9H" customClass="MineResumeInfoView" customModule="ModelA" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="647" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -36,7 +36,7 @@
                             <color key="textColor" red="0.1647058824" green="0.17254901959999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teamDefault" translatesAutoresizingMaskIntoConstraints="NO" id="GwH-4y-8dl">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teamDefault.png" translatesAutoresizingMaskIntoConstraints="NO" id="GwH-4y-8dl">
                             <rect key="frame" x="526" y="22" width="63" height="63"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="63" id="1Jq-oP-Uey"/>
@@ -191,6 +191,6 @@
         <image name="jobage" width="15" height="15"/>
         <image name="jobexpre" width="15" height="15"/>
         <image name="jobsex" width="15" height="15"/>
-        <image name="teamDefault" width="63" height="63"/>
+        <image name="teamDefault.png" width="63" height="63"/>
     </resources>
 </document>

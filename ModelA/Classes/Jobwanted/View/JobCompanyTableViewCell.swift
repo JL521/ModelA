@@ -23,7 +23,7 @@ class JobCompanyTableViewCell: UITableViewCell {
             sjl.text = "企业身价：\(model.sjScore ?? 0)万"
             naml.text = model.companyName
             let url = URL.init(string: model.orgLogo?.https() ?? "")
-            imgv?.sd_setImage(with: url, placeholderImage: UIImage(named: "wd_tx"), options: .retryFailed, completed: nil)
+            imgv?.sd_setImage(with: url, placeholderImage: BundleTool.getImage(str: "wd_tx"), options: .retryFailed, completed: nil)
         }
     }
     

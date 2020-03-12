@@ -29,6 +29,34 @@ import UIKit
         return vc
     }
     
+    @objc func Action_UserFindJob_ViewController(_ params:NSDictionary) -> UIViewController {
+        if let callback = params["callback"] as? (String) -> Void {
+            callback("success")
+        }
+
+        let vc = FindJobViewController()
+        return vc
+    }
+    
+    @objc func Action_QYJob_ViewController(_ params:NSDictionary) -> UIViewController {
+        if let callback = params["callback"] as? (String) -> Void {
+            callback("success")
+        }
+
+        let stob = UIStoryboard.init(name: "ManagerPosition", bundle: BundleTool.getBundle())
+        let vc = stob.instantiateViewController(withIdentifier: "ManagerPositionTableViewController")
+        return vc
+    }
+    
+    @objc func Action_QYFindPeople_ViewController(_ params:NSDictionary) -> UIViewController {
+        if let callback = params["callback"] as? (String) -> Void {
+            callback("success")
+        }
+
+        let vc = BusiFindPeopleViewController()
+        return vc
+    }
+    
     @objc func Action_Category_ViewController(_ params:NSDictionary) -> UIViewController {
         
         if let block = params["callback"] {

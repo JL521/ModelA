@@ -47,12 +47,21 @@ public class JobWantListControllerViewController: UITableViewController {
     override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.section == 0 {
+            let vc = MineResumeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 //            Router.jumpMineResumeController(nav: navigationController)
         }else if indexPath.section == 1 {
+            let vc = SendResumeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 //            Router.jumpMineSendResumeController(nav: navigationController)
         }else if indexPath.section == 2 {
+            let vc = InvitationsReceivedViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
 //            Router.jumpMineInvitationsReceivedController(nav: navigationController)
         }else if indexPath.section == 3 {
+            let vc = FindJobViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
 //            Router.jumpMineGetJobController(nav: navigationController)
         }
     }

@@ -27,6 +27,7 @@ class ViewController: UIViewController {
 
         let vc = stob.instantiateViewController(withIdentifier: "JobWantListControllerViewController")
         self.navigationController?.pushViewController(vc, animated: true)
+
     }
 
 }

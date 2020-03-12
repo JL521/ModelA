@@ -17,9 +17,10 @@ public class BundleTool: NSObject {
     
     }
     
-    
    public class func getImage(str:String,type:String="png") -> UIImage {
         return UIImage.init(contentsOfFile: getBundle().path(forResource: str, ofType: type) ?? "") ?? UIImage()
     }
+    
+    
     
 }

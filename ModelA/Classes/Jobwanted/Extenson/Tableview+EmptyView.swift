@@ -20,7 +20,7 @@ extension UITableView {
         }
 
         if isEmpty(isGroup: isGroup) {
-            if let emptyView =  Bundle.main.loadNibNamed("EmptyView", owner: self, options: [:])?.last as? EmptyView {
+            if let emptyView =  BundleTool.getBundle().loadNibNamed("EmptyView", owner: self, options: [:])?.last as? EmptyView {
                 emptyView.frame = self.bounds
                 emptyView.noDataImageView.image = image
                 emptyView.noDataTitle.text = title
@@ -90,7 +90,7 @@ extension UITableView {
         }
 
         if isNoData {
-            if let emptyView =  Bundle.main.loadNibNamed("EmptyView", owner: self, options: [:])?.last as? EmptyView {
+            if let emptyView =  BundleTool.getBundle().loadNibNamed("EmptyView", owner: self, options: [:])?.last as? EmptyView {
                 emptyView.frame = self.bounds
                 emptyView.noDataImageView.image = image
                 emptyView.noDataTitle.text = title
@@ -126,7 +126,7 @@ extension UICollectionView{
           }
 
           if isEmpty(isGroup: isGroup) {
-              if let emptyView =  Bundle.main.loadNibNamed("EmptyView", owner: self, options: [:])?.last as? EmptyView {
+              if let emptyView =  BundleTool.getBundle().loadNibNamed("EmptyView", owner: self, options: [:])?.last as? EmptyView {
                   emptyView.noDataImageView.image = image
                   emptyView.noDataTitle.text = title
                   if btnTitle != nil {

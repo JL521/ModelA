@@ -59,7 +59,7 @@ class BusiPublishJobViewController: JobWantBaseViewController {
             workexpModel = MinePickModel()
             workexpModel?.name = model?.workyears ?? ""
             
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "yulanres"), style: .plain, target: self, action: #selector(loockJob))
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: BundleTool.getImage(str: "yulanres"), style: .plain, target: self, action: #selector(loockJob))
         }
         
         setTabviewUI()
