@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ModelA'
-  s.version          = '0.3.4'
+  s.version          = '0.3.6'
   s.summary          = 'ModelA组件'
   s.swift_version    = '5'
   

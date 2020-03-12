@@ -7,7 +7,7 @@ PODS:
     - FBSnapshotTestCase/Core
   - IQKeyboardManagerSwift (6.5.5)
   - MJRefresh (3.3.1)
-  - ModelA (0.3.4):
+  - ModelA (0.3.5):
     - IQKeyboardManagerSwift (~> 6.5.5)
     - MJRefresh (~> 3.3.1)
     - Moya-ObjectMapper/RxSwift (= 2.8)
@@ -75,7 +75,7 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  ModelA: 7639cf154c352bdc4733e5f6596f01adb68838c5
+  ModelA: f2ca3ed28f0f1a7da4542dbd41ce41ea0e576870
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f

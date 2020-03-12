@@ -1,6 +1,6 @@
 {
   "name": "ModelA",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "summary": "ModelA组件",
   "swift_versions": "5",
   "description": "TODO: Add long description of the pod here.",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/JL521/ModelA.git",
-    "tag": "0.3.4"
+    "tag": "0.3.5"
   },
   "platforms": {
     "ios": "9.0"

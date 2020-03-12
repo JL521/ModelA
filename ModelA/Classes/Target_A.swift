@@ -23,7 +23,15 @@ import UIKit
         if let callback = params["callback"] as? (String) -> Void {
             callback("success")
         }
+        
+        if let token = params["token"] as? String
+        {
+            GlobalModel.shared.loginType = "1"
+            GlobalModel.shared.isLogin = "1"
+            GlobalModel.shared.token = token
+        }
 
+        print(params)
         let stob = UIStoryboard.init(name: "Jobwanted", bundle: BundleTool.getBundle())
         let vc = stob.instantiateViewController(withIdentifier: "JobWantListControllerViewController")
         return vc
@@ -34,6 +42,13 @@ import UIKit
             callback("success")
         }
 
+        if let token = params["token"] as? String
+        {
+            GlobalModel.shared.loginType = "1"
+            GlobalModel.shared.isLogin = "1"
+            GlobalModel.shared.token = token
+        }
+        
         let vc = FindJobViewController()
         return vc
     }
@@ -43,6 +58,13 @@ import UIKit
             callback("success")
         }
 
+        if let token = params["token"] as? String
+        {
+            GlobalModel.shared.loginType = "1"
+            GlobalModel.shared.isLogin = "1"
+            GlobalModel.shared.token = token
+        }
+        
         let stob = UIStoryboard.init(name: "ManagerPosition", bundle: BundleTool.getBundle())
         let vc = stob.instantiateViewController(withIdentifier: "ManagerPositionTableViewController")
         return vc
@@ -51,6 +73,13 @@ import UIKit
     @objc func Action_QYFindPeople_ViewController(_ params:NSDictionary) -> UIViewController {
         if let callback = params["callback"] as? (String) -> Void {
             callback("success")
+        }
+        
+        if let token = params["token"] as? String
+        {
+            GlobalModel.shared.loginType = "1"
+            GlobalModel.shared.isLogin = "1"
+            GlobalModel.shared.token = token
         }
 
         let vc = BusiFindPeopleViewController()
