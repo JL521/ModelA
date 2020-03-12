@@ -1,6 +1,6 @@
 {
   "name": "ModelA",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "summary": "ModelA组件",
   "swift_versions": "5",
   "description": "TODO: Add long description of the pod here.",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/JL521/ModelA.git",
-    "tag": "0.3.2"
+    "tag": "0.3.4"
   },
   "platforms": {
     "ios": "9.0"
@@ -22,7 +22,7 @@
   "source_files": "ModelA/Classes/**/*",
   "dependencies": {
     "Moya-ObjectMapper/RxSwift": [
-      "~> 2.8"
+      "2.8"
     ],
     "IQKeyboardManagerSwift": [
       "~> 6.5.5"

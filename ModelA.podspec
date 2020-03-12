@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ModelA'
-  s.version          = '0.3.3'
+  s.version          = '0.3.4'
   s.summary          = 'ModelA组件'
   s.swift_version    = '5'
   
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/JL521/ModelA.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ModelA/Classes/**/*'
   #s.resource_bundles = {
