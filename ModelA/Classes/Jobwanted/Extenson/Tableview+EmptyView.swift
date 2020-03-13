@@ -11,7 +11,7 @@ import UIKit
 extension UITableView {
     
 
-    func emptyCheck(image: UIImage? = UIImage.init(named: "nodata"), title: String? = "暂无数据哦~", isGroup: Bool = false,btnTitle:String? = nil,functionCallBack:NoParamCallBack = nil) {
+    func emptyCheck(image: UIImage? = BundleTool.getImage(str: "nodata"), title: String? = "暂无数据哦~", isGroup: Bool = false,btnTitle:String? = nil,functionCallBack:NoParamCallBack = nil) {
 
         for view in self.subviews {
             if view.isKind(of: EmptyView.self) {
@@ -81,7 +81,7 @@ extension UITableView {
         return isEmpty
     }
 
-    func emptyCheckWithIsNoData(image: UIImage? = UIImage.init(named: "nodata"), title: String? = "暂无数据哦~", isNoData: Bool = false,btnTitle:String? = nil,functionCallBack:NoParamCallBack = nil) {
+    func emptyCheckWithIsNoData(image: UIImage? = BundleTool.getImage(str: "nodata"), title: String? = "暂无数据哦~", isNoData: Bool = false,btnTitle:String? = nil,functionCallBack:NoParamCallBack = nil) {
 
         for view in self.subviews {
             if view.isKind(of: EmptyView.self) {
@@ -117,7 +117,7 @@ extension UITableView {
 
 extension UICollectionView{
     
-    func emptyCheck(image: UIImage? = UIImage.init(named: "nodata"), title: String? = "暂无数据哦~", isGroup: Bool = false,btnTitle:String? = nil,functionCallBack:NoParamCallBack = nil) {
+    func emptyCheck(image: UIImage? = BundleTool.getImage(str: "nodata"), title: String? = "暂无数据哦~", isGroup: Bool = false,btnTitle:String? = nil,functionCallBack:NoParamCallBack = nil) {
 
           for view in self.subviews {
               if view.isKind(of: EmptyView.self) {

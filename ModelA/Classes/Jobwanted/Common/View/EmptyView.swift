@@ -27,7 +27,7 @@ class EmptyView: UIView {
         }
     }
     
-    func reloadView(image: UIImage? = UIImage.init(named: "nodata"), title: String? = "暂无数据哦~",btnTitle:String? = nil,functionCallBack:NoParamCallBack = nil){
+    func reloadView(image: UIImage? = BundleTool.getImage(str: "nodata"), title: String? = "暂无数据哦~",btnTitle:String? = nil,functionCallBack:NoParamCallBack = nil){
         noDataImageView.image = image
         noDataTitle.text      = title
         if btnTitle != nil {

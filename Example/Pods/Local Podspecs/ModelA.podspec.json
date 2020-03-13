@@ -1,6 +1,6 @@
 {
   "name": "ModelA",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "summary": "ModelA组件",
   "swift_versions": "5",
   "description": "TODO: Add long description of the pod here.",
@@ -14,12 +14,17 @@
   },
   "source": {
     "git": "https://github.com/JL521/ModelA.git",
-    "tag": "0.3.5"
+    "tag": "0.3.6"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "ModelA/Classes/**/*",
+  "resource_bundles": {
+    "ModelA": [
+      "ModelA/Assets/*"
+    ]
+  },
   "dependencies": {
     "Moya-ObjectMapper/RxSwift": [
       "2.8"

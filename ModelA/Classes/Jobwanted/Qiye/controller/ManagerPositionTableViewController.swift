@@ -14,7 +14,7 @@ class ManagerPositionTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "back"), style: .plain, target: self, action: #selector(realNameBack))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: BundleTool.getImage(str: "back"), style: .plain, target: self, action: #selector(realNameBack))
         
         let hv = UIView()
         hv.frame = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 15)

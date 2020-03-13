@@ -273,7 +273,7 @@ extension JobWantReqAPI:TargetType{
             return ["Accept-Language":"zh"]
         }
         if language[0].hasPrefix("en"){
-            return ["Accept-Language":"en"]
+            return ["Accept-Language":"en","token":token]
         }
         return ["Accept-Language":"zh","token":token]
     }

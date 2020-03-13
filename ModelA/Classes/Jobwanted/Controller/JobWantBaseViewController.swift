@@ -17,7 +17,7 @@ public class JobWantBaseViewController: UIViewController {
 
         self.navigationController?.navigationBar.isTranslucent = false;
         self.view.backgroundColor = UIColor(red: 243/255.0, green: 246/255.0, blue: 251/255.0, alpha: 1)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "back"), style: .plain, target: self, action: #selector(realNameBack))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: BundleTool.getImage(str: "back"), style: .plain, target: self, action: #selector(realNameBack))
     }
 
     @objc func realNameBack() {

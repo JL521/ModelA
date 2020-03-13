@@ -12,7 +12,7 @@ import UIKit
 extension  UIViewController{
     
     func leftIsCostomBack(){
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "back"), style: .plain, target: self, action: #selector(back))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: BundleTool.getImage(str: "back"), style: .plain, target: self, action: #selector(back))
     }
     
     @objc func back(){
@@ -21,7 +21,7 @@ extension  UIViewController{
     
     
     func leftIsCostomBackDismiss(){
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "back"), style: .plain, target: self, action: #selector(dismissBack))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: BundleTool.getImage(str: "back"), style: .plain, target: self, action: #selector(dismissBack))
     }
     
     @objc func dismissBack(){

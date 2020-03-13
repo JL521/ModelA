@@ -29,6 +29,7 @@ import UIKit
             GlobalModel.shared.loginType = "1"
             GlobalModel.shared.isLogin = "1"
             GlobalModel.shared.token = token
+            GlobalModel.shared.synchronize()
         }
 
         print(params)
@@ -47,6 +48,7 @@ import UIKit
             GlobalModel.shared.loginType = "1"
             GlobalModel.shared.isLogin = "1"
             GlobalModel.shared.token = token
+            GlobalModel.shared.synchronize()
         }
         
         let vc = FindJobViewController()
@@ -60,9 +62,10 @@ import UIKit
 
         if let token = params["token"] as? String
         {
-            GlobalModel.shared.loginType = "1"
+            GlobalModel.shared.loginType = "2"
             GlobalModel.shared.isLogin = "1"
             GlobalModel.shared.token = token
+            GlobalModel.shared.synchronize()
         }
         
         let stob = UIStoryboard.init(name: "ManagerPosition", bundle: BundleTool.getBundle())
@@ -77,9 +80,10 @@ import UIKit
         
         if let token = params["token"] as? String
         {
-            GlobalModel.shared.loginType = "1"
+            GlobalModel.shared.loginType = "2"
             GlobalModel.shared.isLogin = "1"
             GlobalModel.shared.token = token
+            GlobalModel.shared.synchronize()
         }
 
         let vc = BusiFindPeopleViewController()
